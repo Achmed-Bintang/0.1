@@ -7,9 +7,8 @@ using namespace std;
 
 int main()
 {	
-	//Daftar Menu Utama
-
 Awal:
+	//Daftar Menu Utama
 
 	cout << setw(40) << "Daftar Menu" << endl;
 
@@ -149,6 +148,38 @@ Awal:
 
 	//Input Pesanan Tambahan
 
+	int jumlahtambahan, nomortambahan, semuatambahan = 0, pesan;
+
+	cout << "Banyak Tambahan Yang Akan Dipesan :";  cin >> jumlahtambahan;  cout << endl;
+	for (int i = 1; i <= jumlahtambahan; i++)
+	{
+		cout << "Masukan Nomor Tambahan " << i << " : ";  cin >> nomortambahan;
+
+		switch (nomortambahan)
+		{
+		case 1:
+			harga = 7000;  break;
+	
+		case 2:
+			harga = 5000;  break;
+
+		case 3:
+			harga = 4000;  break;
+
+		case 4:
+			harga = 3000;  break;
+
+		case 5:
+			harga = 500;   break;
+		}
+		cout << "Jumlah pesanan :";        cin >> jumlahpesanan;
+
+		total = jumlahpesanan * harga;
+		semuatambahan = semuatambahan + total;
+	}
+	cout << "Ditambah Pada Pesanan Keberapa?";
+	cin >> pesan;
+	cout << endl << "Total Semua Minuman :" << semuatambahan << endl;
 
 
 	//Output Pesanan
