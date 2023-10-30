@@ -166,7 +166,7 @@ Akhir:
 
 	cout << endl << "-------------------------------------" << endl;
 	cout << ">>> Terimakasih Telah Mengunjungi <<<" << endl;
-	cout << ">>>>>>> RESTORAN BOCAH SOSMED <<<<<<<" << endl;
+	cout << ">>>>>>> RESTORAN BOCIL FF <<<<<<<" << endl;
 	cout << "-------------------------------------" << endl << endl;
 
 	system("pause");
