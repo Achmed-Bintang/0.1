@@ -172,7 +172,7 @@ Awal:
 		case 5:
 			harga = 500;   break;
 		}
-		cout << "Jumlah pesanan :";        cin >> jumlahpesanan;
+		cout << "Jumlah Tambahan :";        cin >> jumlahpesanan;
 
 		total = jumlahpesanan * harga;
 		semuatambahan = semuatambahan + total;
