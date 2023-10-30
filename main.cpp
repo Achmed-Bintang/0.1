@@ -7,8 +7,9 @@ using namespace std;
 
 int main()
 {	
-Awal:
 	//Daftar Menu Utama
+
+Awal:
 
 	cout << setw(40) << "Daftar Menu" << endl;
 
@@ -117,8 +118,7 @@ Awal:
 		semuaminuman = semuaminuman + total;
 	}
 	cout << endl << "Total Semua Minuman :" << semuaminuman << endl;
-	cout << "*************************************" << endl << endl;
-
+	
 	//Daftar Menu Tambahan
 
 	cout << char(214);
@@ -159,7 +159,7 @@ Awal:
 		{
 		case 1:
 			harga = 7000;  break;
-	
+
 		case 2:
 			harga = 5000;  break;
 
@@ -177,10 +177,10 @@ Awal:
 		total = jumlahpesanan * harga;
 		semuatambahan = semuatambahan + total;
 	}
-	cout << "Ditambah Pada Pesanan Keberapa?";
+	cout << "Ditambah Pada Pesanan Keberapa? ";
 	cin >> pesan;
-	cout << endl << "Total Semua Tambahan :" << semuatambahan << endl;\
-	
+	cout << endl << "Total Semua Tambahan :" << semuatambahan << endl;
+
 	//Output Pesanan
 
 	// Akhir Program.
@@ -194,10 +194,20 @@ Awal:
 
 Akhir:
 
-	cout << endl << "-------------------------------------" << endl;
-	cout << ">>> Terimakasih Telah Mengunjungi <<<" << endl;
-	cout << ">>>>>>> RESTORAN BOCIL FF <<<<<<<" << endl;
-	cout << "-------------------------------------" << endl << endl;
+	cout << char(218);
+	for (int x = 0; x < 33; x++) {
+		cout << char(196);
+	}
+	cout << char(191) << endl;
+
+	cout << char(179) << setw(31) << "TERIMAKASIH TELAH MENGUNJUNGI" << setw(3) << char(179) << endl;
+	cout << char(179) << setw(23) << "RESTORAN KAMI" << setw(11) << char(179) << endl;
+
+	cout << char(192);
+	for (int x = 0; x < 33; x++) {
+		cout << char(196);
+	}
+	cout << char(217) << endl;
 
 	system("pause");
 
