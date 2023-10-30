@@ -179,9 +179,8 @@ Awal:
 	}
 	cout << "Ditambah Pada Pesanan Keberapa?";
 	cin >> pesan;
-	cout << endl << "Total Semua Minuman :" << semuatambahan << endl;
-
-
+	cout << endl << "Total Semua Tambahan :" << semuatambahan << endl;\
+	
 	//Output Pesanan
 
 	// Akhir Program.
