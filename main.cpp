@@ -6,7 +6,7 @@
 using namespace std;
 
 int main()
-{	
+{
 	//Daftar Menu Utama
 
 Awal:
@@ -35,11 +35,11 @@ Awal:
 	}
 	cout << char(185) << endl;
 
-	cout << char(186) << setw (31) << "1. Magelangan       Rp.15.000" << setw(3) << char(186) << setw(27) << "1. Es Extrajoos       Rp.15.000" << setw(3) << char(186) << endl;
-	cout << char(186) << setw (31) << "2. Nasi Goreng      Rp.15.000" << setw(3) << char(186) << setw(21) << "2. Es Teh             Rp.15.000" << setw(3) << char(186) << endl;
-	cout << char(186) << setw (31) << "3. Nasi Telur       Rp.15.000" << setw(3) << char(186) << setw(23) << "3. Es Jeruk           Rp.15.000" << setw(3) << char(186) << endl;
-	cout << char(186) << setw (31) << "4. Nasi Ayam        Rp.15.000" << setw(3) << char(186) << setw(19) << "4. Kopi               Rp.15.000" << setw(3) << char(186) << endl;
-	
+	cout << char(186) << setw(31) << "1. Magelangan       Rp.15.000" << setw(3) << char(186) << setw(27) << "1. Es Extrajoos       Rp.15.000" << setw(3) << char(186) << endl;
+	cout << char(186) << setw(31) << "2. Nasi Goreng      Rp.15.000" << setw(3) << char(186) << setw(21) << "2. Es Teh             Rp.15.000" << setw(3) << char(186) << endl;
+	cout << char(186) << setw(31) << "3. Nasi Telur       Rp.15.000" << setw(3) << char(186) << setw(23) << "3. Es Jeruk           Rp.15.000" << setw(3) << char(186) << endl;
+	cout << char(186) << setw(31) << "4. Nasi Ayam        Rp.15.000" << setw(3) << char(186) << setw(19) << "4. Kopi               Rp.15.000" << setw(3) << char(186) << endl;
+
 	cout << char(211);
 	for (int x = 0; x < 33; x++) {
 		cout << char(196);
@@ -55,7 +55,7 @@ Awal:
 	int jumlahmakanan, nomormakanan, harga, jumlahpesanan, total, semuamakanan = 0;
 	int jumlahminuman, nomorminuman, semuaminuman = 0;
 
-	cout << "Banyak Makanan Yang Akan Dipesan :";  
+	cout << "Banyak Makanan Yang Akan Dipesan :";
 	cin >> jumlahmakanan;  cout << endl;
 
 	for (int i = 1; i <= jumlahmakanan; i++)
@@ -118,7 +118,7 @@ Awal:
 		semuaminuman = semuaminuman + total;
 	}
 	cout << endl << "Total Semua Minuman :" << semuaminuman << endl;
-	
+
 	//Daftar Menu Tambahan
 
 	cout << char(214);
@@ -139,7 +139,7 @@ Awal:
 	cout << char(186) << setw(31) << "2. Cabe Level 1      Rp.15.000" << setw(3) << char(186) << endl;
 	cout << char(186) << setw(31) << "3. Cabe Level 2      Rp.15.000" << setw(3) << char(186) << endl;
 	cout << char(186) << setw(31) << "4. Cabe Level 3      Rp.15.000" << setw(3) << char(186) << endl;
-	
+
 	cout << char(211);
 	for (int x = 0; x < 33; x++) {
 		cout << char(196);
@@ -182,12 +182,13 @@ Awal:
 	cout << endl << "Total Semua Tambahan :" << semuatambahan << endl;
 
 	//Output Pesanan
-
+	cout << "=========================================" << endl;
+	cout << "Total harga yang harus anda bayar adalah : Rp " << semuamakanan + semuaminuman + semuatambahan << endl;
 	// Akhir Program.
 
 	char yt;
 
-	cout << "Ada Lagi Yang Bisa Dibantu  (Y/T) ?";   
+	cout << "Ada Lagi Yang Bisa Dibantu  (Y/T) ?";
 	cin >> yt;
 
 	if (yt == 'Y' || yt == 'y') { goto Awal; }      if (yt == 'T' || yt == 't') { goto Akhir; }
